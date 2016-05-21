@@ -1,0 +1,18 @@
+﻿<Controls:MetroWindow x:Class="MinecraftLogReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+        WindowStartupLocation="CenterScreen" GlowBrush="{DynamicResource AccentColorBrush}" ShowIconOnTitleBar="False" ResizeMode="CanMinimize"
+        Title="Minecraft Log Reader" Height="485" Width="797" SaveWindowPosition="False" >
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="791">
+            <MenuItem Height="29" Width="64" Header="_Setting">
+                <MenuItem x:Name="choose" Header="_Choose" Click="choose_Click" />
+                <MenuItem x:Name="autoRefresh" Header="_Auto Refresh" IsCheckable="True" IsChecked="False" Click="autoRefresh_Click" />
+                <MenuItem x:Name="refresh" Header="_Refresh" IsEnabled="True" Click="refresh_Click" />
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="logbox" HorizontalAlignment="Left" Height="415" Margin="10,34,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="771"/>
+    </Grid>
+</Controls:MetroWindow>
